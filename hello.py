@@ -6,10 +6,16 @@ print('So what\'s your name dawg?') # asks for their name
 my_name = input()
 
 print('Word, nice to meet you ' + my_name)
-print("Your name is this many letters long:")
-print(len(my_name))
+print("Your name is " + str(len(my_name)) + " letters long.")
 print('How old are you?')
 
 my_age = input()
 
-print("You'll be " + str(int(my_age) + 1) + " in a year. Peace.")
+print("You'll be " + str(int(my_age) + 1) + " in a year.")
+print("And what's your favourite floating point number(decimal)?")
+
+fav_float = input()
+
+print("Woah no way. " + str(float(fav_float)) + " is my favourite decimal too!")
+print(fav_float)
+
