@@ -7,6 +7,13 @@ my_name = input()
 
 print('Word, nice to meet you ' + my_name)
 print("Your name is " + str(len(my_name)) + " letters long.")
+
+print("What's your favourite ice cream flavour?");
+
+x = input()
+
+print(x + " isn't my favourite but it's good");
+
 print('How old are you?')
 
 my_age = input()
@@ -19,3 +26,5 @@ fav_float = input()
 print("Woah no way. " + str(float(fav_float)) + " is my favourite decimal too!")
 print(fav_float)
 
+
+print(x)
