@@ -1,11 +1,14 @@
 while True:
-	print("Who are you?")
+	tries = 0
+	print("Enter valid username pls")
 	name = input()
-	if name == "Alex":
+	if name != 'Alex':
+		print("Wrong")
 		continue
 	print("Hello " + name + ", what is the numerical password?")
 	password = input()
-	if password == "13":
+	if password != "13":
+		print("Wrong password, restarting")
 		continue
 	print("Thank you. Would you like to keep this password or change it?(Enter \"keep\" or \"change\")")
 	response = input()
