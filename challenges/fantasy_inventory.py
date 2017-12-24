@@ -12,7 +12,7 @@ def display_inventory(my_inventory): # just takes a dict as argument
 	for k, v in my_inventory.items(): # essentially you're iterating over a tuple since this what the items() method generates
 		print(k, ":", v) # instead of making this whole thing a string, you can just use commas within the print statement
 		total_num = total_num + v
-	print("The total number of items is: ")
+	print("The total number of items is: ", end="")
 	return total_num
 
 print(display_inventory(player_inventory))
