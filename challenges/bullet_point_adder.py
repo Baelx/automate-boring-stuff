@@ -3,7 +3,7 @@
 
 import pyperclip
 
-text = pyperclip.paste()
+text = pyperclip.paste() # here we are outputting the contents of the clipboard. We assume the user has already copied the text to be modified
 
 lines = text.split('\n')
 for i in range(len(lines)):
@@ -11,4 +11,8 @@ for i in range(len(lines)):
 
 text = '\n'.join(lines)
 
-pyperclip.copy(text)
+pyperclip.copy(text) # now we copy the contents of the modified data to the clipboard with pyperclip.copy()
+
+text = """s;lkjsd;flkjs
+it's a life
+sd"""
