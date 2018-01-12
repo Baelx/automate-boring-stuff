@@ -1,6 +1,6 @@
 import re
 
-hl_regex = re.compile(r"(ha){1,}")
+hl_regex = re.compile(r"(ha){1,3}")
 
 soft_laugh = "ha"
 medium_laugh = "haha"
@@ -12,9 +12,11 @@ print(mo2.group())
 
 def hard_laugh_tester(laugh):
 	mo = hl_regex.search(laugh)
-	if bool(mo.group()) == True:
+	if len(mo.group()) == 6:
 		print("gafaawww")
-	else:
+	elif len(mo.group()) == 4:
+		print("Worth a chuckle")
+	elif len(mo.group()) == 2:
 		print("You have no soul")
 
 hard_laugh_tester(soft_laugh)
